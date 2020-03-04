@@ -2,7 +2,9 @@ pipeline {
     agent none
     stages {
         stage('Build') {
-            agent any
+            agent {
+                label 'abc'
+            }
             steps {
                 checkout scm
                 sh 'make'
@@ -11,7 +13,7 @@ pipeline {
         }
         stage('Test on Linux') {
             agent { 
-                label 'linux'
+                label 'abc'
             }
             steps {
                 unstash 'app' 
@@ -25,7 +27,7 @@ pipeline {
         }
         stage('Test on Windows') {
             agent {
-                label 'windows'
+                label 'xyz'
             }
             steps {
                 unstash 'app'
