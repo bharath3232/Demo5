@@ -1,4 +1,3 @@
-echo " Welcome to jenkins world"
-hostname
+echo "hi to all git hub world"
 pwd
-sleep 20
+hostname
