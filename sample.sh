@@ -6,7 +6,7 @@ sleep 20s
 echo "good to see u"
 echo "target"
 sleep 30s
-hiiii 
-heellloo
-vankkam....
+echo "hiiii" 
+echo "heellloo"
+echo "vankkam...."
 
